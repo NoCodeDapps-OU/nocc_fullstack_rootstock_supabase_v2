@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "nocc_fullstack_rootstock_supabase"
+version = "0.1.0"
+description = "nocc_fullstack_rootstock_supabase using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+openai = "^1.50.1"
+anthropic = "^0.34.2"
+python-dotenv = "^1.0.1"
+crewai = "^0.65.2"
+crewai-tools = "^0.12.1"
+litellm = "^1.48.5"
+
+[tool.poetry.scripts]
+nocc_fullstack_rootstock_supabase = "nocc_fullstack_rootstock_supabase.main:run"
+run_crew = "nocc_fullstack_rootstock_supabase.main:run"
+train = "nocc_fullstack_rootstock_supabase.main:train"
+replay = "nocc_fullstack_rootstock_supabase.main:replay"
+test = "nocc_fullstack_rootstock_supabase.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
